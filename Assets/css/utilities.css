@@ -1,0 +1,95 @@
+:root {
+  --black: #000;
+  --white: #fff;
+  --grey: #F0EEEB;
+  --dark-grey: #7A7B7A;
+}
+
+/* Containers */
+.container {
+  max-width: 1550px;
+  margin: 0 auto;
+  padding: 0 40px;
+  overflow: auto;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 300px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* Buttons */
+.black-btn, .form-btn{
+  max-width: 100%;
+  text-decoration: none;
+  padding: 1.2rem 1.5rem;
+  border-radius: 5px;
+  background: var(--black);
+  font-size: 1.2rem;
+  color: var(--white);
+}
+
+.black-btn:hover {
+  cursor: pointer;
+}
+
+/* Form */
+form {
+  justify-content: flex-start;
+  display: flex;
+}
+
+form input {
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+/* Backgrounds */
+.bg-dark {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.bg-dark a {
+  color: var(--white);
+}
+
+.bg-grey {
+  background-color: var(--grey);
+  color: var(--black);
+}
+
+@media screen and (max-width: 768px) {
+  .form-btn {
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  form input {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .form-btn {
+    font-weight: bold;
+    padding: 0.8rem 1rem;
+    font-size: 0.6rem;
+  }
+
+  form input {
+    border-radius: 5px;
+    font-size: 0.8rem;
+  }
+}
